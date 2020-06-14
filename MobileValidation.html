@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Mobile No..." onkeyup="return validateMe(this)"/>
+<script>
+
+    function validateMe(e){
+        const pattStr = /^[7-9]\d{9}$/;
+        if(pattStr.test(e.value)){
+            e.style.backgroundColor="green";
+        }else{
+            e.style.backgroundColor="red";
+        }
+    }
+</script>
+}
+</script>
+</body>
+</html>
